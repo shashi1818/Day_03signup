@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #384047;
+            background-color: #dbe5ee;
+        }
+        form{
+            background-color: #f4f7f8;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <form action="" method="">
+                <h1>Sign Up</h1>
+                <fieldset>
+                    <legend><span class="number">1</span>Your Basic Info</legend>
+                    <label for="name">Name: </label>
+                    <input type="text" name="user_name" id="name">
+
+                    <label for="email">Email: </label>
+                    <input type="email" name="user_email" id="mail">
+
+                    <label for="password">Password: </label>
+                    <input type="password" name="user_password" id="password">
+
+                    <label for="age">Age: </label>
+                    <input type="radio" name="user_age" id="above_18" value="above_18">
+                    <label for="above_18" class="light">Above 18</label><br>
+                    <input type="radio" name="user_age" id="below_18" value="below_18">
+                    <label for="below_18" class="light">Below 18</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend><span class="number">2</span>Your Profile</legend>
+                        <label for="bio">Bio: </label>
+                        <textarea name="user_bio" id="bio"></textarea>
+
+                        <label for="jobrole">Job Role: </label>
+                        <select name="user_job" id="job">
+                            <option value=""></option>
+                            <optgroup label="web">
+                                <option value="frontend-developer">Front-End Developer</option>
+                                <option value="php-developer">PHP Developer</option>
+                                <option value="python-developer">Python Developer</option>
+                                <option value="rails-developer">Rails Developer</option>
+                                <option value="web-designer">Web Designer</option>
+                                <option value="word-press-developer">Word Press Developer</option>
+                            </optgroup>
+                            <optgroup label="Mobile">
+                                <option value="android-developer">Android Developer</option>
+                                <option value="ios-developer">IOS Developer</option>
+                                <option value="mobile-designer">Mobile Designer</option>
+                            </optgroup>
+                            <optgroup label="Bussiness">
+                                <option value="bussiness-owner">Bussiness Owner</option>
+                                <option value="freelancer">Freelancer</option>
+                            </optgroup>
+                        </select>
+                        <label for="interest">Interest: </label>
+                        <input type="checkbox" name="user_interest" id="development" value="interest_development">
+                            <label class="light" for="development">Development</label><br>
+
+                        <input type="checkbox" name="user_interest" id="design" value="interest_design">
+                            <label class="light" for="design">Design</label><br>
+
+                        <input type="checkbox" name="user_interest" id="bussiness" value="interest_bussiness">
+                            <label class="light" for="bussiness">Bussiness</label>    
+                    
+                    </fieldset>
+                    <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
